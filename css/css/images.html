@@ -9,11 +9,27 @@
     <style>
         body {
             background-color: beige;
-            background-image: url(/img/minions4.jpg);
+            background-image: url(/css/img/minions4.jpg);
             background-attachment: fixed; /*Opção pra deixar a imagem fixa*/
             background-size: cover; /*diminuir ou aumentar o tamanho da imagem de fundo */
+            font-family: Arial, Helvetica, sans-serif;
         }
-
+        div{
+            background-color: #fffb2aee;
+            width: 1000px;
+            height: 190px;
+            margin: 10px;
+            overflow: auto;
+        }
+        #div1{
+            padding: 20px;
+            float: right;
+        }
+        #div2{
+            padding: 55px;
+            box-sizing: border-box;
+            clear: both /*(esquerda/direita); não deixa a alteração da div implicar na próxima div*/  
+        }
         h1 {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 48px;
@@ -28,7 +44,6 @@
             border-bottom-color: black;
             border-style: dotted;
         }
-
         h2 {
             text-transform: uppercase;
             font-family: Arial, Helvetica, sans-serif;
@@ -39,7 +54,6 @@
             border-color: aqua;
             padding: 10px;
         }
-
         p {
             font-variant: normal;
             text-align: left;
@@ -48,16 +62,16 @@
             text-transform: none;
             line-height: 1.5;
         }
-
+        b, i {
+            background-color: aqua;
+        }
         .destaque {
             background-color: black;
             color: yellow;
         }
-
         #ta {
             background-color: #fffb2a;
         }
-
         .img-minion {
             float: left;
         }
@@ -67,11 +81,11 @@
 <body>
     <h1>Estrutura</h1>
     <h2>Minion</h2>
-    <p>Minions ipsum underweaaar tulaliloo poopayee po kass wiiiii bappleees daa. Bee do bee do bee do wiiiii pepete
+    <div id="div1"><p>Minions ipsum underweaaar tulaliloo poopayee po kass wiiiii bappleees daa. Bee do bee do bee do wiiiii pepete
         gelatooo potatoooo belloo! Bananaaaa.
         Poopayee gelatooo tatata bala tu po kass. Belloo! uuuhhh jiji po kass chasy underweaaar gelatooo hana dul sae
-        butt. Bananaaaa la bodaaa poulet tikka masala tatata bala tu jiji.</p>
-    <img src="/img/minion2.png" class="img-minion" alt="minion">
+        butt. Bananaaaa la bodaaa poulet tikka masala tatata bala tu jiji.</p></div>
+    <img src="/css/img/minion2.png" class="img-minion" alt="minion">
     <p class="destaque">Tank yuuu! uuuhhh potatoooo uuuhhh para tú underweaaar gelatooo tulaliloo. Bee do bee do bee do
         poulet tikka masala para tú tatata bala tu wiiiii.
         Gelatooo aaaaaah para tú baboiii jeje uuuhhh underweaaar para tú poopayee potatoooo. Hana dul sae jiji bananaaaa
@@ -85,18 +99,18 @@
     <p class="destaque">Tank yuuu! baboiii underweaaar tulaliloo daa tank yuuu! Aaaaaah me want bananaaa! Uuuhhh.
         Underweaaar potatoooo daa chasy tatata bala tu gelatooo tatata bala tu tank yuuu! Baboiii bananaaaa hana dul
         sae.
-        Me want bananaaa! ti aamoo! Jeje para tú uuuhhh hahaha poopayee hana dul sae aaaaaah po kass me want bananaaa!
+        <i>Me want bananaaa! ti aamoo!</i> Jeje para tú uuuhhh hahaha poopayee hana dul sae aaaaaah po kass me want bananaaa!
         Belloo! poopayee hana dul sae gelatooo.
         Po kass me want bananaaa! Underweaaar chasy po kass para tú bee do bee do bee do tank yuuu! Para tú la bodaaa la
         bodaaa.
         Daa jeje tank yuuu! Butt. Hana dul sae bappleees gelatooo butt hahaha butt. Hana dul sae daa po kass potatoooo
         me want bananaaa! Hahaha chasy.
         Hana dul sae daa pepete uuuhhh.</p>
-    <p>Minions ipsum underweaaar me want bananaaa! Aliqua belloo! Dolore. Bee do bee do bee do tank yuuu! Bee do bee do
+    <div id="div2"><p><b>Minions</b> ipsum underweaaar me want bananaaa! Aliqua belloo! Dolore. Bee do bee do bee do tank yuuu! Bee do bee do
         bee do reprehenderit velit aute sed minim ut et.
         Ut bee do bee do bee do elit aliquip. Nisi nisi uuuhhh ex aliqua esse ti aamoo! Eiusmod ex occaecat veniam qui.
         La bodaaa hana dul sae poopayee quis eiusmod ullamco.
-        Butt consectetur commodo tank yuuu! Butt nostrud me want bananaaa! La bodaaa.</p>
+        Butt consectetur commodo tank yuuu! Butt nostrud me want bananaaa! La bodaaa.</p></div>
     <p>Hahaha bee do bee do bee do dolore et occaecat exercitation. Tulaliloo belloo! Aute poulet tikka masala veniam
         aaaaaah bappleees minim magna aaaaaah la bodaaa.
         Aliquip elit voluptate daa baboiii officia ad irure tempor po kass. Chasy poopayee ex exercitation exercitation
