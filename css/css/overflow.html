@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <style>
+        div{
+            padding: 2%;
+            margin: 50px;
+            border: 1px solid black;
+            width: 20%;
+            display: inline-block;
+            height: 100px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+        .div1{
+            overflow: visible;
+        }
+        .div2{
+            overflow: hidden; /*esconde o texto dentro da caixa*/
+        }
+        .div3{
+            overflow: scroll; /*coloca uma barra*/
+        }
+        .div4{
+            overflow: auto; /*coloca barra de rolagem se precisar*/
+        }
+        .div5{
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et volutpat nibh. Vivamus accumsan nisl nunc, sed congue massa consequat sit amet. 
+    Aliquam varius ornare lorem ac hendrerit. Nunc auctor urna a ex fermentum fermentum. Nam sit amet diam a augue faucibus dapibus id vitae mauris. 
+    Quisque fermentum, diam non hendrerit eleifend, dolor purus posuere quam, in dictum lorem metus id lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
+    per inceptos himenaeos. Praesent sed est pellentesque sem ultrices eleifend eu vel nunc. In leo erat, vulputate eget mi nec, pharetra feugiat augue. 
+    Proin lobortis orci at aliquam rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce vitae ligula felis. 
+    Morbi convallis enim mi. In auctor nibh nisi, id commodo eros rhoncus vel.</p>
+    </div>
+<div class="div2"><p>Morbi bibendum sem nec diam fermentum, quis convallis enim viverra. Vivamus malesuada lobortis tortor blandit hendrerit. Nulla suscipit neque egestas tristique aliquam. 
+Morbi ex lorem, egestas ut sapien sed, mattis feugiat orci. Nullam sit amet mi hendrerit, pulvinar nulla id, facilisis ante. Phasellus blandit at libero at tempus. 
+Etiam pellentesque sed lacus vitae varius. Vestibulum congue mattis posuere. Nullam id turpis dolor. Ut id tincidunt eros. Integer sem justo, ultricies quis euismod at, cursus ut leo. 
+Quisque euismod ultrices eros, quis cursus quam iaculis blandit. Nam sed vestibulum magna. Nam sed nulla eget tortor semper egestas. 
+Mauris sodales eros sed nulla pharetra, sed porta orci venenatis. Pellentesque sapien nunc, euismod ut eros vitae, suscipit dictum ex.</p>
+</div>
+<div class="div3"><p>Donec fermentum dui ipsum, tempor sagittis magna ultrices sed. Mauris hendrerit facilisis facilisis. Morbi condimentum tellus a pulvinar porttitor. 
+Proin lacus dolor, tincidunt non finibus et, vehicula lobortis eros. Aliquam at consectetur ipsum, ut gravida risus. Donec sollicitudin interdum mauris eu imperdiet. 
+Curabitur tristique odio venenatis ante volutpat mattis. Nunc eu lacinia mi, quis eleifend sapien. Nam lacinia blandit semper.</p>
+</div>
+<div class="div4"><p>Suspendisse porttitor, enim et consectetur sagittis, neque mi pretium lorem, tempor pretium velit ex eu lacus. 
+    Donec consectetur enim et odio suscipit porta vel ac ipsum. Ut bibendum velit quis erat elementum eleifend. Nunc lorem nunc, cursus nec blandit eu, mattis eu quam. 
+    Sed maximus nisi nibh, id euismod orci tempus ultrices. Quisque rutrum sapien quis rhoncus gravida. Curabitur commodo, metus non volutpat egestas, sem metus viverra ipsum, 
+    ac gravida odio ligula ut turpis.</p>
+</div>
+<div class="div5"><p>Mauris at tempus mi. Integer eget odio pellentesque, porta enim et, condimentum nulla. In tristique congue purus, at aliquam leo placerat at.</p>
+</div>
+</body>
+</html>

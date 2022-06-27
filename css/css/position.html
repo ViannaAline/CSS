@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+</head>
+<style>
+    #um{
+        background-color: brown;
+        padding: 10px;
+        width: 100%;
+        height: 80px;
+        position: relative; /* se relaciona com a próxima div*/
+        top: 0;
+        margin-top: 50px;
+    }
+    #dois{
+        background-color: blue;
+        padding: 10px;
+        width: 80%;
+        height: 50px;
+        position: relative;
+        top: -20px;
+        right: -25px;
+    }
+    #tres{
+        background-color: yellow;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+    /* position fixed: fica fixo ao browser*/
+</style>
+
+<body>
+    <h1>Position</h1>
+    <p><a href="https://www.4devs.com.br/gerador_de_texto_lorem_ipsum">Gerador de texto</a></p>
+
+    <div id="container">
+        <div id="um">1
+            <div id="dois">2
+                <div id="tres">3</div>
+            </div>
+        </div>
+
+        <p>Lorem ipsum lobortis bibendum elementum pharetra risus fringilla dictumst, quam nunc porttitor interdum justo
+            elit convallis iaculis mi, non mattis ut dui interdum vel convallis.
+            libero eu varius metus ad urna imperdiet auctor vestibulum, nullam curabitur nisl viverra quam sollicitudin
+            consequat et, cras proin convallis scelerisque ipsum pharetra integer.
+            nisl neque ipsum duis tempus urna per conubia hendrerit, mi blandit sed himenaeos velit justo augue ornare
+            interdum, etiam turpis tristique ut ante habitasse quisque.
+            praesent elit conubia aliquam per ligula lacus vivamus, platea etiam porta mi dui tempor scelerisque,
+            feugiat netus vestibulum mollis purus morbi. </p>
+
+        <p>Neque primis condimentum donec in curabitur tristique nisl egestas mauris lorem, ac arcu netus tempor id vel
+            rhoncus aliquet.
+            suscipit maecenas dictum ipsum auctor pellentesque ultricies eu gravida interdum neque, magna mi in per
+            ultrices pulvinar per sit in sit, dictumst habitasse integer libero auctor
+            per nec neque quisque. senectus consectetur tellus luctus maecenas orci platea porttitor nulla sapien ad
+            nisl, accumsan condimentum himenaeos laoreet inceptos arcu est elementum
+            habitant urna laoreet erat, imperdiet enim phasellus enim auctor rutrum vulputate phasellus pretium primis.
+            commodo etiam nam interdum accumsan elit nisi scelerisque ante
+            sollicitudin, taciti non vitae litora eu litora faucibus accumsan urna, rutrum magna orci potenti amet
+            faucibus tristique ornare. </p>
+
+        <p> Fusce purus egestas cursus leo eros ultricies blandit adipiscing conubia tellus, auctor proin egestas platea
+            suspendisse convallis eget fusce condimentum ornare,
+            pretium luctus odio aliquam curabitur duis platea est ipsum. tincidunt ornare cras mollis litora malesuada
+            varius in primis odio, tristique venenatis fusce condimentum et mi luctus
+            gravida. ipsum tempor pellentesque fames fringilla blandit varius netus, curabitur tellus cursus posuere
+            nunc nec est duis, proin etiam condimentum leo in sem. aptent auctor dolor
+            taciti senectus potenti sit turpis a at suspendisse enim at, etiam vitae dictumst quis integer aenean
+            dapibus ad quisque ultricies. </p>
+
+        <p>Conubia cras conubia egestas pharetra platea diam netus nec sagittis elit tristique volutpat, magna
+            sollicitudin non purus suscipit potenti gravida torquent suspendisse
+            rutrum maecenas libero, sollicitudin vulputate nostra donec sodales viverra gravida praesent elementum
+            rhoncus hendrerit. tempor nam hac euismod pulvinar class augue sociosqu
+            pellentesque, neque turpis lacinia consequat nulla quisque aenean, etiam erat tincidunt netus venenatis
+            metus inceptos. fames dictum aliquet varius quisque dapibus inceptos faucibus
+            turpis curae, lobortis rutrum curae sollicitudin lacinia ligula neque congue taciti vulputate, consectetur
+            tempus ornare ad primis molestie nisl volutpat. convallis at dictum cras
+            integer conubia class elementum vitae aliquam purus elit nullam, sapien condimentum pretium tempor interdum
+            eros quam tempus nam purus. </p>
+
+        <p>Congue dolor rhoncus tempus varius fusce sollicitudin tristique, litora taciti nam est commodo est pulvinar,
+            ultrices ac fringilla risus proin lobortis viverra,
+            diam libero volutpat urna ut ullamcorper. etiam a ut fusce neque cubilia mauris enim vehicula pulvinar
+            egestas aliquet diam morbi nullam, arcu odio at himenaeos in mauris at
+            aliquam libero hendrerit dictumst sodales lorem. viverra nisl leo id venenatis quisque ultricies commodo,
+            dolor at curabitur arcu dapibus pellentesque molestie neque, rhoncus
+            litora conubia duis maecenas mattis. laoreet interdum tempus donec ultricies in iaculis tellus, justo quis
+            cras porttitor egestas massa. Lorem ipsum lobortis bibendum elementum
+            pharetra risus fringilla dictumst, quam nunc porttitor interdum justo elit convallis iaculis mi, non mattis
+            ut dui interdum vel convallis. libero eu varius metus ad urna imperdiet
+            auctor vestibulum, nullam curabitur nisl viverra quam sollicitudin consequat et, cras proin convallis
+            scelerisque ipsum pharetra integer. nisl neque ipsum duis tempus urna per
+            conubia hendrerit, mi blandit sed himenaeos velit justo augue ornare interdum, etiam turpis tristique ut
+            ante habitasse quisque. praesent elit conubia aliquam per ligula lacus
+            vivamus, platea etiam porta mi dui tempor scelerisque, feugiat netus vestibulum mollis purus morbi. </p>
+
+        <p>Neque primis condimentum donec in curabitur tristique nisl egestas mauris lorem, ac arcu netus tempor id vel
+            rhoncus aliquet. suscipit maecenas dictum ipsum auctor pellentesque
+            ultricies eu gravida interdum neque, magna mi in per ultrices pulvinar per sit in sit, dictumst habitasse
+            integer libero auctor per nec neque quisque. senectus consectetur tellus
+            luctus maecenas orci platea porttitor nulla sapien ad nisl, accumsan condimentum himenaeos laoreet inceptos
+            arcu est elementum habitant urna laoreet erat, imperdiet enim phasellus
+            enim auctor rutrum vulputate phasellus pretium primis. commodo etiam nam interdum accumsan elit nisi
+            scelerisque ante sollicitudin, taciti non vitae litora eu litora faucibus accumsan
+            urna, rutrum magna orci potenti amet faucibus tristique ornare. </p>
+
+        <p>Fusce purus egestas cursus leo eros ultricies blandit adipiscing conubia tellus, auctor proin egestas platea
+            suspendisse convallis eget fusce condimentum ornare,
+            pretium luctus odio aliquam curabitur duis platea est ipsum. tincidunt ornare cras mollis litora malesuada
+            varius in primis odio, tristique venenatis fusce condimentum et mi luctus
+            gravida. ipsum tempor pellentesque fames fringilla blandit varius netus, curabitur tellus cursus posuere
+            nunc nec est duis, proin etiam condimentum leo in sem. aptent auctor dolor
+            taciti senectus potenti sit turpis a at suspendisse enim at, etiam vitae dictumst quis integer aenean
+            dapibus ad quisque ultricies. </p>
+
+        <p>Conubia cras conubia egestas pharetra platea diam netus nec sagittis elit tristique volutpat, magna
+            sollicitudin non purus suscipit potenti gravida torquent suspendisse
+            rutrum maecenas libero, sollicitudin vulputate nostra donec sodales viverra gravida praesent elementum
+            rhoncus hendrerit. tempor nam hac euismod pulvinar class augue sociosqu
+            pellentesque, neque turpis lacinia consequat nulla quisque aenean, etiam erat tincidunt netus venenatis
+            metus inceptos. fames dictum aliquet varius quisque dapibus inceptos
+            faucibus turpis curae, lobortis rutrum curae sollicitudin lacinia ligula neque congue taciti vulputate,
+            consectetur tempus ornare ad primis molestie nisl volutpat. convallis
+            at dictum cras integer conubia class elementum vitae aliquam purus elit nullam, sapien condimentum pretium
+            tempor interdum eros quam tempus nam purus.</p>
+
+        <p>Congue dolor rhoncus tempus varius fusce sollicitudin tristique, litora taciti nam est commodo est pulvinar,
+            ultrices ac fringilla risus proin lobortis viverra,
+            diam libero volutpat urna ut ullamcorper. etiam a ut fusce neque cubilia mauris enim vehicula pulvinar
+            egestas aliquet diam morbi nullam, arcu odio at himenaeos in mauris
+            at aliquam libero hendrerit dictumst sodales lorem. viverra nisl leo id venenatis quisque ultricies commodo,
+            dolor at curabitur arcu dapibus pellentesque molestie neque,
+            rhoncus litora conubia duis maecenas mattis. laoreet interdum tempus donec ultricies in iaculis tellus,
+            justo quis cras porttitor egestas massa. </p>
+
+    </div>
+</body>
+
+</html>
