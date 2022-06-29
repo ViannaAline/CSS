@@ -16,9 +16,33 @@
         h1{
             font-family: nadia, Helvetica, sans-serif;
         } font squirrel - baixar fontes diferenciadas*/
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            transition-property: all;
+            transition-duration: 500ms;
+            transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); /*função acelera ou desacelera*/
+            transition-delay: 0.1s; /* atrasa o começo da animação*/ 
+        }
+        .div2{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            transition-property: width, height;
+            transition-duration: 2s, 3s;
+            transition-timing-function: cubic-bezier(1, 0, 0, 1), linear;
+            transition-delay: 0.5s, 1s;
+        }
+        div:hover{
+            width: 400px;
+            height: 400px;
+        }
     </style>
 </head>
 <body>
-   <h1>Fonte</h1>
+    <h1>DIV</h1>
+   <div>1</div><br>
+   <div class="div2">2</div>
 </body>
 </html>
