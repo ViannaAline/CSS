@@ -6,18 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>projeto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="css.css">
 </head>
 
 <body>
     <header class="main-header">
         <a href="index.html" class="main-header-link">
-            <img src="#" alt="texto">
+            <img src="/css/images/avatar.jpg" alt="texto">
         </a>
-        <h1>Trabalhos de<br>
+        <h1 class="main-header-title">Trabalhos de<br>
             <strong> Aline Vianna</strong>,<br>
             uma humana em constante aprendizagem<br>
-            Retirado do <a href="https://www.linkedin.com/in/alinevianna1992/">Linkedin</a>
+            Retirado do <a href="https://www.linkedin.com/in/alinevianna1992/" class="main-header-link">Linkedin</a>
         </h1>
     </header>
     <main class="main-content">
@@ -126,10 +130,15 @@
                     code: for (;;) { ... }</code> this is a
                 <a href="#">link</a>
             </p>
-
+            <h1>Titulo h1</h1>
+            <h2>Titulo h2</h2>
+            <h3>Titulo h3</h3>
+            <h4>Titulo h4</h4>
+            <h5>Titulo h5</h5>
+            <h6>Titulo h6</h6>
             <blockquote cite="http://developer.mozilla.org">
-                <p>Esta é uma citação tirada da
-                    Mozilla Developer Center.</p>
+                Esta é uma citação tirada da
+                Mozilla Developer Center.
             </blockquote>
 
             <p>According to Mozilla's website,
@@ -145,142 +154,228 @@
 &lt;/script&gt;
                   </code>                 
                 Teste Pre</pre>
-                <h4>Listas</h4>
-                <h5>Não ordenada</h5>
-                <ul>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                </ul>
-                <h5>Ordenadas</h5>
-                <ol>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                </ol>
-                <h5>Alternate</h5>
-                <ul class="ul-alternate">
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                </ul>
-                <!--<h5>Icons</h5>
+            <h4>Listas</h4>
+            <div class="row">
+                <div class="col-2">
+                    <h5>Não ordenada</h5>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                    <h5>Ordenadas</h5>
+                    <ol>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ol>
+                </div>
+                <div class="col-2">
+                    <h5>Alternate</h5>
+                    <ul class="ul-alternate">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!--<h5>Icons</h5>
                 <ul>
                     <li style="color: red;""><i class="fa-brands fa-twitter"></i></li>
                 </ul>-->
 
-                <h5>Actions</h5>
-                <p>
+            <h5>Actions</h5>
+            <p>
                 <a href="#" class="button-default">Default</a>
                 <a href="#" class="button-default button-default-stroke">Default</a>
-                </p>
+            </p>
 
-                <p>
+            <p>
                 <a href="#" class="button-default button-default-small">Default</a>
                 <a href="#" class="button-default button-default-small button-default-stroke">Default</a>
-                </p>
+            </p>
 
-                <p>
+            <p>
                 <a href="#" class="button-default button-default-full">Default</a>
                 <a href="#" class="button-default button-default-full button-default-stroke">Default</a>
-                </p>
+            </p>
 
-                <p>
+            <p>
                 <a href="#" class="button-default button-default-full button-default-small">Default</a>
                 <a href="#" class="button-default button-default-full button-default-small
                 button-default-stroke">Default</a>
-                </p>
-                <h4>Table</h4>
-                <h5>Default</h5>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Description</th>
-                            <th>Price</th>
-                        </tr>
-                    </thead>
-                    <tfoot>
-                        <tr>
-                            <td colspan="2"></td>
-                            <td>100.00</td>
-                        </tr>
-                    </tfoot>
-                    <tbody>
-                        <tr>
-                            <td>Item one</td>
-                            <td>Orange</td>
-                            <td>9.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item two</td>
-                            <td>Apple</td>
-                            <td>5.95</td>
-                        </tr>
-                        <tr>
-                            <td>Item three</td>
-                            <td>Strawberry</td>
-                            <td>10.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item four</td>
-                            <td>Pineapple</td>
-                            <td>11.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item five</td>
-                            <td>Lemon</td>
-                            <td>3.99</td>
-                        </tr>
-                    </tbody>
-                </table>
+            </p>
+            <h4>Table</h4>
+            <h5>Default</h5>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"></td>
+                        <td>100.00</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>Item one</td>
+                        <td>Orange</td>
+                        <td>9.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item two</td>
+                        <td>Apple</td>
+                        <td>5.95</td>
+                    </tr>
+                    <tr>
+                        <td>Item three</td>
+                        <td>Strawberry</td>
+                        <td>10.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item four</td>
+                        <td>Pineapple</td>
+                        <td>11.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item five</td>
+                        <td>Lemon</td>
+                        <td>3.99</td>
+                    </tr>
+                </tbody>
+            </table>
 
-                <h5>Alternate</h5>
-                <table class="table-alternate">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Description</th>
-                            <th>Price</th>
-                        </tr>
-                    </thead>
-                    <tfoot>
-                        <tr>
-                            <td colspan="2"></td>
-                            <td>100.00</td>
-                        </tr>
-                    </tfoot>
-                    <tbody>
-                        <tr>
-                            <td>Item one</td>
-                            <td>Orange</td>
-                            <td>9.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item two</td>
-                            <td>Apple</td>
-                            <td>5.95</td>
-                        </tr>
-                        <tr>
-                            <td>Item three</td>
-                            <td>Strawberry</td>
-                            <td>10.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item four</td>
-                            <td>Pineapple</td>
-                            <td>11.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item five</td>
-                            <td>Lemon</td>
-                            <td>3.99</td>
-                        </tr>
-                    </tbody>
-                </table>
-                
+            <h5>Alternate</h5>
+            <table class="table-alternate">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"></td>
+                        <td>100.00</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>Item one</td>
+                        <td>Orange</td>
+                        <td>9.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item two</td>
+                        <td>Apple</td>
+                        <td>5.95</td>
+                    </tr>
+                    <tr>
+                        <td>Item three</td>
+                        <td>Strawberry</td>
+                        <td>10.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item four</td>
+                        <td>Pineapple</td>
+                        <td>11.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item five</td>
+                        <td>Lemon</td>
+                        <td>3.99</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h5>Buttons</h5>
+            <p>
+                <button href="#" class="button-default">Default</button>
+                <button href="#" class="button-default button-default-stroke">Default</button>
+            </p>
+
+            <p>
+                <button href="#" class="button-default button-default-small">Default</button>
+                <button href="#" class="button-default button-default-small button-default-stroke">Default</button>
+            </p>
+
+            <p>
+                <button href="#" class="button-default button-default-full">Default</button>
+                <button href="#" class="button-default button-default-full button-default-stroke">Default</button>
+            </p>
+
+            <p>
+                <button href="#" class="button-default button-default-full button-default-small">Default</button>
+                <button href="#" class="button-default button-default-full button-default-small
+                button-default-stroke">Default</button>
+            </p>
+            <input type="submit" class="button-default" value="mandar">
+
+            <h5>Form</h5>
+
+            <form>
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <select>
+                    <option value="0">Selecione ...</option>
+                    <option value="1">HTML</option>
+                    <option value="2">CSS</option>
+                    <option value="3">Javascript</option>
+                </select>
+                <label><input type="radio" value="baixa" name="prioridade">Baixa prioridade</label>
+                <label><input type="radio" value="media" name="prioridade">Media prioridade</label>
+                <label><input type="radio" value="alta" name="prioridade">Alta prioridade</label>
+
+                <label><input type="checkbox" name="copy" value="1">Envie uma cópia</label>
+                <label><input type="checkbox" name="human" value="1">Sou humano</label>
+
+                <label for="msg">Mensagem:</label>
+                <textarea placeholder="Digite uma mensagem" id="msg"></textarea>
+
+                <input type="submit" class="button-default" value="Enviar">
+                <input type="reset" class="button-default-stroke" value="Limpar">
+
+            </form>
+
         </section>
-        
+        <section class="main-content-section">
+            <h3>Imagens</h3>
+            <div class="gallery-img">
+                <img src="/css/fulls/01.jpg" alt="1 imagem">
+            </div>
+            <div class="gallery-thumb">
+                <img src="/css/thumbs/01.jpg" alt="1 imagem">
+                <img src="/css/thumbs/02.jpg" alt="2 imagem">
+                <img src="/css/thumbs/03.jpg" alt="3 imagem">
+                <img src="/css/thumbs/04.jpg" alt="4 imagem">
+                <img src="/css/thumbs/05.jpg" alt="5 imagem">
+                <img src="/css/thumbs/06.jpg" alt="6 imagem">
+            </div>
+            <h4>Left &amp; Right</h4>
+            <p>
+                <img src="/css/fulls/05.jpg" class="img-left">
+                Donec ullamcorper sem rutrum molestie ultricies.
+                Suspendisse tincidunt mauris et fringilla maximus.
+                Mauris consectetur tellus et rhoncus pulvinar.
+            </p>
+            <p>
+                <img src="/css/fulls/05.jpg" class="img-right">
+                Donec ullamcorper sem rutrum molestie ultricies.
+                Suspendisse tincidunt mauris et fringilla maximus.
+                Mauris consectetur tellus et rhoncus pulvinar.
+            </p>
+
+        </section>
     </main>
     <footer class="main-footer"></footer>
 </body>
