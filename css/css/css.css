@@ -109,18 +109,29 @@ textarea{
 }
 .button-default{
     background-color: #49bf9d;
-    border: 2px solid #49bf9d;
+    border: 3px solid #49bf9d;
     color: white;
     padding: 0.75em 1.5em;
     border-radius: 5px;
     font-size: 0.8em;
     display: inline-block;
     width: auto;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.button-default:hover{
+    background-color: #5ddeb9;
+    border-color: transparent;
 }
 .button-default-stroke{
     background-color: white;
     border-color: #efefef;
     color: inherit;
+}
+.button-default-stroke:hover{
+    color: #49bf9d;
+    border-color: #49bf9d;
+    background-color: white;
 }
 .button-default-small{
     font-size: 0.6em;
@@ -216,6 +227,15 @@ textarea{
     margin-bottom: 2%;
     display: inline-block;
     border-radius: 5px;
+}
+.main-footer{
+    position: fixed;
+    bottom: 0px;
+    width: 35%;
+    left: 0;
+    padding: 0 54px 72px 0;
+    box-sizing: border-box;
+    text-align: right;
 }
 /*Grid*/
 .row{
