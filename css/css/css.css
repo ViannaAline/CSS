@@ -53,6 +53,12 @@ blockquote{
     margin: 2em 0;
     padding: .5em 0 .05em 1.5em;
 }
+blockquote p{
+    margin-bottom: 0.5em;
+}
+blockquote p:last-child{
+    margin-bottom: 0;
+}
 code{
     background-color: #f7f7f7;
     border-radius: .35em;

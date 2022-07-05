@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo</title>
+    <style>
+        input[type="checkbox"] {
+            width: 50px;
+            height: 50px;
+        }
+        input[type="checkbox"]:checked {
+            width: 20px;
+            height: 20px;
+        }
+        button:disabled {
+            background-color: black;
+            color: aliceblue;
+        }
+        p {
+            color: orange;
+        }
+        p:empty:before {
+            content: "paragrafo vazio não dá, né!";
+        }
+        input[type="text"]:focus {
+            background-color: blanchedalmond;
+        }
+        input[type="text"]:read-only {
+            background-color: orangered;
+        }
+        a:focus, a:hover, div:focus{
+            background-color: orchid;
+        }
+        input::placeholder {
+            color: olivedrab;
+        }
+    </style>
+</head>
+<body>
+    <label><input type="checkbox" value="Sim"> Aceito o contrato</label>
+    <button>Prosseguir</button>
+    <button disabled>Voltar</button>
+
+    <p>Paragrafo 1</p>
+    <p> </p>
+    <p></p>
+    <hr>
+
+    <input type="text">
+    <input type="text" value="valor inicial">
+    <input type="text" value="valor inicial" read-only>
+    <input type="text" value="valor inicial" disabled>
+    <input type="text" placeholder="valor do placeholder">
+
+    <ul>
+        <li><a href="#">Link falso</a></li>
+        <li><a href="#">Link falso</a></li>
+        <li><a href="#">Link falso</a></li>
+        <li><a href="#">Link falso</a></li>
+    </ul>
+
+    <div tabindex="1">div 1</div>
+    <div tabindex="2">div 2</div>
+    <div tabindex="3">div 3</div>
+</body>
+</html>

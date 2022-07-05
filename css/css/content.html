@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seletores</title>
+    <style>
+        div {
+            border: 3px solid rosybrown;
+            padding: 25px;
+            position: relative;
+            margin: 25px;
+        }
+        div:before {
+            content: "before:";
+            background-color: #ccc;
+        }
+        div:after {
+            content: "";
+            background-color: red;
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div>Texto Principal da DIV</div>
+    <article>
+        <p> Antes do Título</p>
+        <h3>Título</h3>
+        <p>Paragrafo <a href="#">Apenas um link com <b>negrito</b></a></p>
+        <p>Paragrafo <a href="#">Apenas um link com <b>negrito</b></a></p>
+        <p>Paragrafo <a href="#">Apenas um link com <b>negrito</b></a></p>
+    </article>
+    <ul>
+        <li><a href="#">Link Falso</a></li>
+        <li><a href="#">Link Falso</a></li>
+        <li><a href="https://www.google.com" title="busca">Link externo</a></li>
+        <li><a href="https://www.uol.com/.pdf">Link externo</a></li>
+        <li><a href="https://www.linkedin.com/in/alinevianna1992/" target="_blank">Link interno</a></li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo</title>
+    <style>
+      div p:nth-of-type(3) {
+        color: aquamarine;
+      }
+      .destaque {
+        background-color: bisque;
+      }
+      .destaque:nth-of-type(4), .destaque:nth-of-type(7) {
+            color: blueviolet;
+      }
+      .first:first-child {
+            color: indianred;
+      }
+      p:last-child {
+            text-align: center;
+      }
+    </style>
+</head>
+<body>
+    <div>
+        <p class="first">Meu paragrafo</p>
+        <p>Meu paragrafo</p>
+        <hr>
+        <p>Meu paragrafo</p>
+        <p class="destaque">Meu paragrafo</p>
+        <hr>
+        <p>Meu paragrafo</p>
+        <p>Meu paragrafo</p>
+        <hr>
+        <p class="destaque">Meu paragrafo</p>
+        <p>Meu paragrafo</p>
+    </div>
+</body>
+</html>
