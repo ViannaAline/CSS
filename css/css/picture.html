@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>figure</title>
+        <meta charset="UTF-8">
+        <meta name="tipo" content="figure">
+        <meta name="viewport" contet="width=device-width">
+
+    </head>
+    <body>
+        <h1>Picture</h1>
+       <picture>
+        <source media="(min-width: 480px)" sizes="33vw" 
+        srcset="/css/rwd-images/1280.jpg 1280w, /css/rwd-images/960.jpg 960w, 
+        /css/rwd-images/480.jpg 480w">
+        <source sizes="100vw" srcset="/css/rwd-images/822_mob.jpg 822w,
+        /css/rwd-images/640_mob.jpg 640w, /css/rwd-images/320_mob.jpg 320w">
+        <img src="/css/rwd-images/1280.jpg" alt="alternativo">
+       </picture>
+    </body>
+</html>
