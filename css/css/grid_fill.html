@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="grid" content="grid">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>auto fill vs auto fit</title>
+
+        <style>
+            .gridContainer {
+                width: 90%;
+                background-color: #ccc;
+                margin: 30px auto;
+                display: grid;
+                grid-gap: 10px;
+                /* grid-template-columns: repeat(auto-fill, 100px); /* cria colunas escondidas */
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr) ); /* completa a coluna */
+                grid-auto-rows: 50px 150px; 
+            }
+           .gridItem {
+            background-color: palevioletred;
+            padding: 5px;
+            font-family: sans-serif;
+           }
+
+
+        </style>
+    </head>
+
+    <body>
+        <h2>Auto fill vs Auto fit</h2>
+
+        <div class="gridContainer">
+            <div class="gridItem">1</div>
+            <div class="gridItem">2</div>
+            <div class="gridItem">3</div>
+            <div class="gridItem">4</div>
+            <div class="gridItem">5</div>
+            <div class="gridItem">6</div>
+            <div class="gridItem">7</div>
+            <div class="gridItem">8</div>
+            <div class="gridItem">9</div>
+            <div class="gridItem">10</div>
+            <div class="gridItem">11</div>
+            <div class="gridItem">12</div> 
+        </div>
+
+    </body>
+</html>
