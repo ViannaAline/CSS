@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Meu CSS não funciona</title>
+    <meta charset="UTF-8">
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #externa {
+            background-color: darkorange;
+            width: 80vw; /* vw = viewport width */
+            height: 80vh; /* vh = viewport height */
+        }
+
+        #interna {
+            width: 90%;
+            height: 80%;
+            background-color: darkblue;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div id="externa">externa
+
+            <div id="interna">interna</div>
+
+        </div>
+
+    </header>
+
+</body>
+
+</html>

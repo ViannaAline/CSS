@@ -6,33 +6,24 @@
     <meta charset="UTF-8">
 
     <style>
-
-        .destaque {
-            color: cadetblue;
-        }
-
-        #unico {
-            color: darkblue;
-        }
-
-        p.destaque {
-            color: chartreuse;
-        }
-
-        p {
-            color: coral; /* !important - sobrescreve as demais regras */
-        }
-
-        p[lang] {
-            color: indianred;
-        }
-
-        #jumbotron {
+        .jumbotron {
             background-color: rgba(0, 0, 0, 0.5);
         }
 
-        #jumbotron p {
+        .jumbotron__text {
             color: white;
+        }
+        
+        .jumbotron__title {
+            color: blueviolet;
+        }
+
+        p {
+            color: brown;
+        }
+
+        #nav ul.mainNav li a span {
+
         }
         
     </style>
@@ -42,10 +33,10 @@
 <body>
     <h1>Meu CSS não funciona</h1>
 
-    <div id="jumbotron">
-        <h2>subtitulo</h2>
-        <p>paragrafos</p>
-        <p>paragrafos</p>
+    <div class="jumbotron">
+        <h2 class="jumbotron__title">subtitulo</h2> <!---->
+        <p class="jumbotron__text">paragrafos</p>
+        <p class="jumbotron__text">paragrafos</p>
     </div>
     <p style="color: yellow">Com estilo inline</p>
     <p lang="pt-br" class="destaque"> Testando atributos </p>
